@@ -23,6 +23,10 @@ if __name__ == "__main__":
       message = separator.join(sys.argv[3:])
       print(message)
       print(summoned.image)
+      if summoned.name == "dragon":
+        print("This dragon can breathe fire.")
+      elif summoned.name == "ice-dragon":
+        print("This dragon cannot breathe fire.")
     else:
       print(f"Could not find {sys.argv[2]} cow!")
   else:
