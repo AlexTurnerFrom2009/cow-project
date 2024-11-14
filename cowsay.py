@@ -18,7 +18,7 @@ if __name__ == "__main__":
   if sys.argv[1] == "-l":
     print("Cows available: "+ separator.join(list_cows(cows)))
   elif sys.argv[1] == "-n":
-    if sys.argv[2] in hg.cowNames:
+    if sys.argv[2] in hg.cow_names or sys.argv[2] in hg.dragon_names:
       summoned = find_cow(sys.argv[2], cows)
       message = separator.join(sys.argv[3:])
       print(message)
